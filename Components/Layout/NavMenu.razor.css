@@ -1,0 +1,41 @@
+/* Hide the checkbox itself */
+#nav-toggle {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+/* Style the "hamburger" icon */
+.navbar-toggler {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+}
+
+/* Initially hide the nav menu on small screens */
+#navbarNav {
+    display: none;
+}
+
+/* Show when checkbox is checked */
+#nav-toggle:checked ~ #navbarNav {
+    display: block;
+}
+
+/* Responsive: Always show on large screens */
+@media (min-width: 992px) {
+    #navbarNav {
+        display: block !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+    
+
+}
+
